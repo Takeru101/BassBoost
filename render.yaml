@@ -1,0 +1,22 @@
+databases:
+  - name: Bass Boost_DB
+    databaseName: bass_boost_db
+    user: Bass Boost
+    region: singapore
+
+services:
+  - type: web
+    name: Bass Boost
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: Bass Boost_DB
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+
