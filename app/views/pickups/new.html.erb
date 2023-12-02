@@ -1,0 +1,44 @@
+<%= stylesheet_link_tag 'shindan', :media => "all" %>
+
+<%= form_for(@pickup, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="container-sindan">
+    <div class="row">
+            <div class="title">
+                <p>あなたにおすすめのベースを診断(全３問)</p>
+            </div>
+            
+            <div class="col-12">
+                <p>Q1. 帰り道に聴きたい音楽は？</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>激しいロック</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>ゆったりとしたバラード</p>
+            </div>
+
+            <div class="col-12">
+                <p>Q2. どちらかと言うと？</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>縁の下の力持ちだ</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>目立ちたいほうだ</p>
+            </div>
+
+            <div class="col-12">
+                <p>Q3. 好きなプレイスタイルは？</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "1", nil %>テクニカルな演奏</p>
+            </div>
+            <div class="col-6">
+                <p><%= f.check_box :question, {multiple: true}, "2", nil %>バンドを支える正確無比な演奏</p>
+            </div>
+        </div>
+    </div>
+    <div class="sindanbotan">
+        <%= f.submit "結果" %>
+    </div>
+<% end %>

@@ -1,0 +1,38 @@
+<%= stylesheet_link_tag 'index', :media => "all" %>
+<%= stylesheet_link_tag 'style', :media => "all" %>
+
+
+<div class="search-form-002">
+        <%= form_tag({controller:"picks",action:"index"}, method: :get) do %>
+          <div class="yoko">
+          <%= text_field_tag :search %>
+          <%= button_tag :type => "submit" do %>
+          </div>
+          <% end %>
+        <% end %>
+</div>
+
+<div class="toko">
+<a href="picks/new" class="btn-square-shadow">投稿する</a>
+</div>
+
+<div class="picks-container">
+<h3>投稿一覧</h3>
+  <% @picks.each do |t| %>
+    <div class="pick">
+      <div class="main-box">
+        <div class="left-container"><%= t.about %></div>
+        <div class="right-container">
+          <%= image_tag t.image_url, size: "250x200" if t.image? %>
+          <%= t.user.email %>
+          <br>
+          <br>
+          <%= link_to "コメントする", pick_path(t.id) %>
+          <%= link_to "編集", edit_pick_path(t.id) %>
+          <%= button_to "削除", pick_path(t.id), method: :delete %>
+      </div>
+    </div>
+      <p class="time"><%= t.created_at %></p>
+    </div>
+  <% end %>
+</div>

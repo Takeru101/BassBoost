@@ -1,0 +1,74 @@
+<%= stylesheet_link_tag 'result', :media => "all" %>
+<div class="intro">
+<h4>診断結果</h4>
+<p>あなたにおすすめのベースは…</p>
+</div>
+<div class="tweet-container">
+<div class="tweet">
+    <% if @pickup.question == "111" %>
+    <h3>プレシジョンベース</h3>
+    <img src="/assets/プレシジョンベース.png" alt="" width="312.78" height="563">
+    <div class="kakomi-maru2">
+    <p>エレキベースの元祖</p>
+    <p>柔らかく骨太のサウンド</p>
+    </div>
+
+    <% elsif @pickup.question == "112" %>
+    <h3>ジャズベース</h3>
+    <img src="/assets/ジャズベース.jpg" alt="" width="240.21" height="563">
+    <div class="kakomi-maru2">
+    <p>ジャズという名前だけどジャンル問わず使われるベース</p>
+    <p>はっきりとした音色が特徴</p>
+    </div>
+
+    <% elsif @pickup.question == "121" %>
+    <h3>スティングレイ</h3>
+    <img src="/assets/StingRay.jpg" alt="" width="299" height="563">
+    <div class="kakomi-maru2">
+    <p>スラップベースを魅せつけよう！</p>
+    <p>唯一無二の攻撃的なサウンド</p>
+    </div>
+
+    <% elsif @pickup.question == "211" %>
+    <h3>バイオリンベース</h3>
+    <img src="/assets/hofner.jpg" alt="" width="154.16" height="563">
+    <div class="kakomi-maru2">
+    <p>ポール・マッカートニーも愛用</p>
+    <p>温かみのある音色</p>
+    </div>
+
+    <% elsif @pickup.question == "222" %>
+    <h3>バイオリンベース</h3>
+    <img src="/assets/hofner.jpg" alt="" width="154.16" height="563">
+    <div class="kakomi-maru2">
+    <p>ポール・マッカートニーも愛用</p>
+    <p>温かみのある音色</p>
+    </div>
+    
+    <% elsif @pickup.question == "221" %>
+    <h3>スティングレイ</h3>
+    <img src="/assets/StingRay.jpg" alt="" width="299" height="563">
+    <div class="kakomi-maru2">
+    <p>スラップベースを魅せつけよう！</p>
+    <p>唯一無二の攻撃的なサウンド</p>
+    </div>
+
+    <% elsif @pickup.question == "212" %>
+    <h3>ジャズベース</h3>
+    <img src="/assets/ジャズベース.jpg" alt="" width="240.21" height="563">
+    <div class="kakomi-maru2">
+    <p>ジャズという名前だけどジャンル問わず使われるベース</p>
+    <p>はっきりとした音色が特徴</p>
+    </div>
+
+    <% elsif @pickup.question == "122" %>
+    <h3>プレシジョンベース</h3>
+    <img src="/assets/プレシジョンベース.png" alt="" width="312.78" height="563">
+    <div class="kakomi-maru2">
+    <p>エレキベースの元祖</p>
+    <p>柔らかく骨太のサウンド</p>
+    </div>
+    
+    <% end %>
+
+</div>

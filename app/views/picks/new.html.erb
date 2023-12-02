@@ -1,0 +1,22 @@
+<%= stylesheet_link_tag 'new', :media => "all" %>
+
+<div class="post-container">
+    <p class="title">投稿フォーム</p>
+    <%= form_for(@pick, :url => { controller:'picks', action:'create'})do |f| %>
+    <%= f.label :投稿内容 %>
+        <%= f.text_field :about,size: 140%>
+        <%= f.file_field :image %>
+        <br>
+        <br>
+        <form>
+        <p class="formbottom">
+        <input type="submit" value="送信" class="btns submit">
+        </p>
+        </form>
+    <br>
+    <% end %>
+</div>
+
+<div class="back">
+<%= link_to "一覧に戻る", picks_path %>
+</div>

@@ -1,0 +1,45 @@
+.picks-container {
+    width: 50%;
+    margin: 10px auto;
+  }
+  h3 {
+    width: 100px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .pick {
+    border-top: solid #68c4ca;
+    margin-top: 10px;
+    padding-top: 20px;
+  }
+  .main-box {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .time {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .btn-square-shadow {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #68c4ca;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #3a6a6d;
+    border-radius: 3px;
+  }
+  .btn-square-shadow:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+  }
+
+  .toko {
+    padding-top: 70px;
+    padding-left: 1035px;
+  }
