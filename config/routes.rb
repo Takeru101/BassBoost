@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     resources :comments, only: [:create]
 
   end
-
+  
   resources :pickups
   root 'picks#index'
 end
