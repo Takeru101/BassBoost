@@ -27,9 +27,11 @@
           <%= t.user.email %>
           <br>
           <br>
-          <%= link_to "コメントする", pick_path(t.id) %>
-          <%= link_to "編集", edit_pick_path(t.id) %>
-          <%= button_to "削除", pick_path(t.id), method: :delete %>
+          <div class="sonota">
+            <%= link_to "コメントする", pick_path(t.id) %>
+            <%= link_to "編集", edit_pick_path(t.id) %>
+            <%= link_to "削除", pick_path(t.id), method: :delete %>
+          </div>
       </div>
     </div>
       <p class="time"><%= t.created_at %></p>
