@@ -56,13 +56,28 @@ h4:before {
     background: #68c4ca;
 }
 
-.box5 {
-    width: 37.5%;
-    padding: 0.5em 1em;
+.sample_box3_1 {
+    position: relative;
+    padding: 1em 1.5em;
     margin: 2em 0;
-    border: double 5px #68c4ca;
+    border: solid 3px #68c4ca;/*線*/
+    border-radius: 8px;/*角の丸み*/
+    color: #000000;/*文字色*/
+    width: 37.5%;
 }
-.box5 p {
+.sample_box3_1 .sample_box_title{
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 10px;
+    line-height: 1;
+    font-size: 1.1em;/*タイトル文字サイズ*/
+    background: #ffffff;/*タイトル文字背景色*/
+    color: #68c4ca;/*タイトル文字色*/
+    font-weight: bold;
+}
+.sample_box3_1 p {
     margin: 0; 
     padding: 0;
 }

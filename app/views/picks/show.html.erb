@@ -1,5 +1,7 @@
 <%= stylesheet_link_tag 'show', :media => "all" %>
 
+<div class="toko">
+ <div class="toko1">
   <h3>詳細</h3>
   <div class="pick">
     <p><%= @pick.about %></p>
@@ -10,9 +12,9 @@
     <p>コメント一覧</p>
     <% @comments.each do |c| %>
       <div>
-        <%= c.user.email unless c.user.blank? %>
-        <br>
         <%= c.content %>
+        <br>
+        <%= c.user.email unless c.user.blank? %>
       </div>
         <br>
     <% end %>
@@ -28,3 +30,5 @@
   </div>
 
   <%= link_to "一覧に戻る", picks_path %>
+ </div>
+</div>
