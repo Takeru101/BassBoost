@@ -2,23 +2,27 @@
 
 <div class="toko">
  <div class="toko1">
-  <h3>詳細</h3>
-  <div class="pick">
-    <p><%= @pick.about %></p>
-    <p><%= @pick.created_at %></p>
+  <div class="box_11">
+    <div class="pick">
+      <p><%= @pick.about %></p>
+      <p><%= @pick.created_at %></p>
+    </div>
   </div>
-
+  <br>
   <div class="comment-wrapper">
-    <p>コメント一覧</p>
-    <% @comments.each do |c| %>
-      <div>
-        <%= c.content %>
-        <br>
-        <%= c.user.email unless c.user.blank? %>
+    <div class="box_17">
+    <div class="box_17_ttl">コメント一覧</div>
+      <div class="box_17_txt">
+        <% @comments.each do |c| %>
+          <div>
+            <%= c.content %>
+            <br>
+            <%= c.user.email unless c.user.blank? %>
+          </div>
+        <% end %>
       </div>
-        <br>
-    <% end %>
-
+    </div>
+    <br>
     <% if user_signed_in? %>
       <%= form_with(model: [@pick, @comment], local: true) do |f| %>
         <%= f.text_area :content %>
