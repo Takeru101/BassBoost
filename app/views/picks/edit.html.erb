@@ -1,5 +1,13 @@
-<%= form_for @pick do |f| %>
-    <%= f.label :about %>
-    <%= f.text_field :about, :size => 140 %> 
-    <%= f.submit "編集する" %>
+<%= stylesheet_link_tag 'edit', :media => "all" %>
+
+<div class="container">
+  <%= form_for @pick do |f| %>
+      <%= f.label :投稿 %>
+      <%= f.text_field :about, :size => 140 %> 
+      <form>
+        <p class="formbottom">
+        <input type="submit" value="編集する" class="btns submit">
+        </p>
+      </form>
   <% end %>
+</div>

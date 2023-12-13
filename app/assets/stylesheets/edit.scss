@@ -1,0 +1,32 @@
+form .formbottom {
+	text-align: center;
+    margin-left: 895px;
+    margin-top: 10px;
+} 
+form .btns{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px;
+	padding: 6px 25px;
+	color: #68c4ca;
+	font-weight: bold;
+	letter-spacing: 0.5pt;
+	text-decoration: none;
+	background-color: #ffffff;
+	border: 1px solid #68c4ca;
+	cursor: pointer;
+	transition-duration:0.3s;
+    -webkit-transition-duration:0.3s;
+    -moz-transition-duration:0.3s;
+    -o-transition-duration:0.3s;
+    -ms-transition-duration:0.3s;
+} 
+form .btns:hover{
+    color: #ffffff;
+    background-color: #68c4ca;
+}
+
+.container {
+    text-align: center;
+    margin-top: 150px;
+	}
