@@ -70,3 +70,6 @@
     transition-duration: 0.5s;
   }  
 
+.header-list a:hover {
+  color: #c5dcdc;
+}
