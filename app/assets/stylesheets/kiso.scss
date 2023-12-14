@@ -81,3 +81,62 @@ h4:before {
     margin: 0; 
     padding: 0;
 }
+
+
+.sample_box3_2 {
+    position: relative;
+    padding: 1em 1.5em;
+    margin: 2em 0;
+    border: solid 3px orange;/*線*/
+    border-radius: 8px;/*角の丸み*/
+    color: #000000;/*文字色*/
+    width: 32%;
+}
+.sample_box3_2 .sample_box_title2{
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 10px;
+    line-height: 1;
+    font-size: 1em;/*タイトル文字サイズ*/
+    background: #ffffff;/*タイトル文字背景色*/
+    color: orange;/*タイトル文字色*/
+    font-weight: bold;
+}
+.sample_box3_2 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+.sample_box3_3 {
+    position: relative;
+    padding: 1em 1.5em;
+    margin: 2em 0;
+    border: solid 3px #454599;/*線*/
+    border-radius: 8px;/*角の丸み*/
+    color: #000000;/*文字色*/
+    width: 32%;
+}
+.sample_box3_3 .sample_box_title3{
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 10px;
+    line-height: 1;
+    font-size: 1em;/*タイトル文字サイズ*/
+    background: #ffffff;/*タイトル文字背景色*/
+    color: #454599;/*タイトル文字色*/
+    font-weight: bold;
+}
+.sample_box3_3 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+span.playstyles {
+    background:linear-gradient(transparent 60%, #a4f0f5 60%);
+}
