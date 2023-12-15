@@ -109,8 +109,8 @@ h1::after {
 .menu1 a {
   background-image: linear-gradient(
     to right,
-    #54b3d6,
-    #54b3d6 50%,
+    #68c4ca,
+    #68c4ca 50%,
     #000 50%
   );
   background-size: 200% 100%;
@@ -122,10 +122,9 @@ h1::after {
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
-
 .menu1 a:before {
   content: '';
-  background: #54b3d6;
+  background: #68c4ca;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -134,11 +133,9 @@ h1::after {
   height: 3px;
   transition: all 0.3s ease-in-out;
 }
-
 .menu1 a:hover {
   background-position: 0;
 }
-
 .menu1 a:hover::before {
   width: 100%;
 }
@@ -146,8 +143,8 @@ h1::after {
 .menu2 a {
   background-image: linear-gradient(
     to right,
-    #54b3d6,
-    #54b3d6 50%,
+    #68c4ca,
+    #68c4ca 50%,
     #000 50%
   );
   background-size: 200% 100%;
@@ -159,10 +156,9 @@ h1::after {
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
-
 .menu2 a:before {
   content: '';
-  background: #54b3d6;
+  background: #68c4ca;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -171,11 +167,9 @@ h1::after {
   height: 3px;
   transition: all 0.3s ease-in-out;
 }
-
 .menu2 a:hover {
   background-position: 0;
 }
-
 .menu2 a:hover::before {
   width: 100%;
 }
@@ -183,8 +177,8 @@ h1::after {
 .menu3 a {
   background-image: linear-gradient(
     to right,
-    #54b3d6,
-    #54b3d6 50%,
+    #68c4ca,
+    #68c4ca 50%,
     #000 50%
   );
   background-size: 200% 100%;
@@ -196,10 +190,9 @@ h1::after {
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
-
 .menu3 a:before {
   content: '';
-  background: #54b3d6;
+  background: #68c4ca;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -208,11 +201,9 @@ h1::after {
   height: 3px;
   transition: all 0.3s ease-in-out;
 }
-
 .menu3 a:hover {
   background-position: 0;
 }
-
 .menu3 a:hover::before {
   width: 100%;
 }
