@@ -87,7 +87,7 @@ h4:before {
     position: relative;
     padding: 1em 1.5em;
     margin: 2em 0;
-    border: solid 3px orange;/*線*/
+    border: solid 3px #FFA500;/*線*/
     border-radius: 8px;/*角の丸み*/
     color: #000000;/*文字色*/
     width: 32%;
@@ -101,7 +101,7 @@ h4:before {
     line-height: 1;
     font-size: 1em;/*タイトル文字サイズ*/
     background: #ffffff;/*タイトル文字背景色*/
-    color: orange;/*タイトル文字色*/
+    color: #FFA500;/*タイトル文字色*/
     font-weight: bold;
 }
 .sample_box3_2 p {

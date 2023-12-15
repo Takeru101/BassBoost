@@ -25,7 +25,8 @@
     font-family: "Prata", 'Noto Sans JP', sans-serif;
   }
   header {
-    background-color: #68C4CA;
+    background: rgb(41,72,128);
+    background: linear-gradient(90deg, rgba(41,72,128,1) 0%, rgba(104,196,202,1) 73%);
     height: 80px;
     font-weight: bold;
     display: flex;
@@ -73,3 +74,7 @@
 .header-list a:hover {
   color: #c5dcdc;
 }
+
+
+
+
